@@ -1,0 +1,334 @@
+
+*{
+    padding: 20px;
+    margin: 20px;
+}
+body{
+    background-color: rgb(245, 236, 236);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#contenedor{  
+    background-color:rgb(224, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#datosPersonales{
+    background-color: white;
+    height: 1200px;
+    width: 2200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 26px 8px rgba(00, 00, 00, 0.1);
+
+}
+#user_title{
+    margin-top: 50px;
+    font-size: 100px;
+
+}
+
+
+
+#user_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 26px 8px rgba(00, 00, 00, 0.20);
+
+}
+
+#user_photo2{
+    height: 520px;
+    width: 520px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 26px 8px rgba(00, 00, 00, 0.20);
+    padding: 0px;
+}
+
+.icon{
+    height: 200px;
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    list-style: none;
+    transform:translate(-50%,-50%) ;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;  
+}
+
+.icon a{
+    
+    height: 200px;
+    width: 200px;
+    cursor: pointer;   
+}
+
+.icon a::before{
+content:url(/Imagnes/correo-electronico-vacio.png);
+position: absolute;
+display: block;
+margin-left: 20px;
+
+}
+.icon a:hover::before{
+    margin-top:-400px ; 
+}
+
+.icon a::after{
+content:url(/Imagnes/llamada-telefonica.png);
+position: absolute;
+margin-left: 20px;
+top: 110%;
+display: block;
+}
+.icon a:hover::after{
+    top: 11%;
+}
+
+
+.icon .one:before{
+   content: url(/Imagnes/llamada-telefonica.png);
+   transition: all 0.5s ease-in-out;
+   margin-top: 25px;
+}
+.icon .one::after{
+    content: url(/Imagnes/telefono2.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ }
+ 
+
+.icon .two:before{
+    content: url(/Imagnes/marcador-de-posicion.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ }
+
+.icon .two::after{
+    content: url(/Imagnes/marcador-de-posicion2.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ 
+ }
+ .icon .three:before{
+    content: url(/Imagnes/correo-electronico-vacio.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ 
+ }
+ .icon .three::after{
+    content:url(/Imagnes/mensaje2.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ 
+ }
+ .icon .four:before{
+    content: url(/Imagnes/linkedin.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ 
+ }
+
+ .icon .four::after{
+    content: url(/Imagnes/Linquedin2.png);
+    transition: all 0.5s ease-in-out;
+    margin-top: 25px;
+ }
+
+ .contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ 
+.contenedor-inputs input{
+    width: 1300px;
+    height: 100px;
+    border-radius: 3px;
+    font-size: 50px;
+   
+}
+.contenedor-inputs #texto{
+    width: 1300px;
+    height: 600px;
+    border-radius: 3px;
+    font-size: 50px;
+}
+
+
+.contenedor-inputs .btn-submit{
+    width: 250px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: rgb(10, 190, 235);
+    color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 26px 8px rgba(00, 00, 00, 0.20);
+  
+
+}
+.overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.popup{
+    background-color: #f8f8f8f8;
+    box-shadow: 0px 5px 26px 8px rgba(00, 00, 00, 0.20);
+    border-radius: 3px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    width: 1600px;
+    height: 1500px;
+    margin: 0%;
+    padding: 0%;
+    }
+    .popup h3{
+        font-size: 100px;
+    
+    }
+
+.popup .btn-cerrar-popup{
+    color: #bbbbbb;
+    border: 1px solid black;
+    margin-top: -10%;
+    margin-left: 100%;
+     
+        }
+.overlay.active{
+    visibility: visible;
+}
+
+
+
+.datosExtras{
+    background-color: white;
+    height: 1700px;
+    width: 2200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    font-size: 65px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;   
+}
+#perfil{
+    margin-top: 50px;
+    background-color: white;
+    width: 100%;
+    height: 12%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#perfil:hover{
+    transition: all 0.5s ease-in-out;
+    height: 60%;
+    
+}
+
+#perfil h2{
+    box-shadow: 0px 20px 0px 0px rgba(00, 00, 00, 0.1);
+}
+
+#educacion{
+    background-color: white;
+    width:100%;
+    height: 12%;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#educacion:hover{
+    height: 60%;
+  transition: all 0.5s ease-in-out;
+  overflow: scroll;
+  
+}
+#educacion h2{
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 20px 0px 0px rgba(00, 00, 00, 0.1);
+    
+}
+
+#educacion li{
+height: 50px;
+list-style: none;
+ box-shadow: 0px 5px 0px 0px rgba(00, 00, 00, 0.1);
+}
+
+
+
+#experiencia_laboral{
+    background-color: white;
+    width: 100%;
+    height: 12%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#experiencia_laboral:hover{
+    height: 60%;
+    transition: all 0.5s ease-in-out;
+    overflow: scroll;
+  
+}
+
+#experiencia_laboral h2{
+    box-shadow: 0px 20px 0px 0px rgba(00, 00, 00, 0.1);
+    }
+#experiencia_laboral li{
+    height: 50px;
+    list-style: none;
+     box-shadow: 0px 5px 0px 0px rgba(00, 00, 00, 0.1);
+}
+
+#tecnologias{
+    background-color: white;
+    width:100%;
+    height: 12%;
+    margin-top: 50px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+#tecnologias:hover{
+    height: 60%;
+  transition: all 0.5s ease-in-out;
+  
+}
+#tecnologias h2{
+    box-shadow: 0px 20px 0px 0px rgba(00, 00, 00, 0.1);
+}
+
+#tecnologias li{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 250px;
+height: 250px;
+list-style: none;
+float: left;
+}
