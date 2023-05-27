@@ -87,7 +87,7 @@ body{
 }
 
 .icon a::before{
-content:url(/Imagnes/correo-electronico-vacio.png);
+content:url(./Imagnes/correo-electronico-vacio.png);
 position: absolute;
 display: block;
 margin-left: 20px;
@@ -98,7 +98,7 @@ margin-left: 20px;
 }
 
 .icon a::after{
-content:url(/Imagnes/llamada-telefonica.png);
+content:url(./Imagnes/llamada-telefonica.png);
 position: absolute;
 margin-left: 20px;
 top: 110%;
@@ -110,50 +110,50 @@ display: block;
 
 
 .icon .one:before{
-   content: url(/Imagnes/llamada-telefonica.png);
+   content: url(./Imagnes/llamada-telefonica.png);
    transition: all 0.5s ease-in-out;
    margin-top: 25px;
 }
 .icon .one::after{
-    content: url(/Imagnes/telefono2.png);
+    content: url(./Imagnes/telefono2.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  }
  
 
 .icon .two:before{
-    content: url(/Imagnes/marcador-de-posicion.png);
+    content: url(./Imagnes/marcador-de-posicion.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  }
 
 .icon .two::after{
-    content: url(/Imagnes/marcador-de-posicion2.png);
+    content: url(./Imagnes/marcador-de-posicion2.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  
  }
  .icon .three:before{
-    content: url(/Imagnes/correo-electronico-vacio.png);
+    content: url(./Imagnes/correo-electronico-vacio.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  
  }
  .icon .three::after{
-    content:url(/Imagnes/mensaje2.png);
+    content:url(./Imagnes/mensaje2.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  
  }
  .icon .four:before{
-    content: url(/Imagnes/linkedin.png);
+    content: url(./Imagnes/linkedin.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  
  }
 
  .icon .four::after{
-    content: url(/Imagnes/Linquedin2.png);
+    content: url(./Imagnes/Linquedin2.png);
     transition: all 0.5s ease-in-out;
     margin-top: 25px;
  }
