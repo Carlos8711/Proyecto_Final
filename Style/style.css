@@ -87,7 +87,7 @@ body{
 }
 
 .icon a::before{
-content:url(./Imagnes/correo-electronico-vacio.png);
+content:url(Imagnes/correo-electronico-vacio.png);
 position: absolute;
 display: block;
 margin-left: 20px;
@@ -98,7 +98,7 @@ margin-left: 20px;
 }
 
 .icon a::after{
-content:url(./Imagnes/llamada-telefonica.png);
+content:url(Imagnes/llamada-telefonica.png);
 position: absolute;
 margin-left: 20px;
 top: 110%;
